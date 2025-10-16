@@ -1,6 +1,6 @@
 # Environment variables (contains passwords)
-databaze/.env
-.env
+# databaze/.env
+# .env
 
 # Python virtual environment
 databaze/venv/
