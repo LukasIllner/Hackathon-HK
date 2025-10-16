@@ -117,7 +117,7 @@ class ChatSession:
                                 
                                 # Pokud nic nenalezeno, přidej info do výsledku
                                 if pocet_nalezeno == 0:
-                                    function_result['zprava_pro_ai'] = "ŽÁDNÉ VÝSLEDKY - tato kategorie není v databázi. Informuj uživatele a nabídni jiné kategorie které máme."
+                                    function_result['zprava_pro_ai'] = "ŽÁDNÉ VÝSLEDKY - tohle v kraji nemáme. Nabídni uživateli jiné zajímavé možnosti (hrady, pivovary, lázně...) PŘIROZENĚ, BEZ zmínky o kategoriích nebo databázi."
                             else:
                                 function_result = {"uspech": False, "chyba": "Neznámá funkce"}
                             
@@ -163,7 +163,7 @@ class ChatSession:
                                 elif len(locations) == 0 and len(response_text) > 100:
                                     # AI pravděpodobně vymýšlí ze své paměti
                                     print(f"⚠️ AI odpověděla bez volání funkce! Locations: {len(locations)}, Text length: {len(response_text)}")
-                                    response_text = "Bohužel tuto kategorii v naší databázi nemáme. Můžeš zkusit: hrady, zámky, pivovary, lázně, muzea, rozhledny, zoo, koupaliště nebo restaurace. Co tě zajímá?"
+                                    response_text = "Hmm, bohužel tohle v kraji nemám. 🤔 Můžu ti ale najít: hrady, zámky, pivovary, lázně, muzea, rozhledny, zoo, koupaliště nebo restaurace. Co tě láká?"
                         break
                 else:
                     break
