@@ -33,7 +33,7 @@ funkce_hledani_mist = genai.protos.FunctionDeclaration(
             ),
             "kategorie": genai.protos.Schema(
                 type=genai.protos.Type.STRING,
-                description="Kategorie míst: Hrady, Zámky, Muzea, Pivovary, Restaurace, Zoo, Divadla, Kina, Lázně, Letní koupání, Golfové hřiště, Letní sporty, Přírodní zajímavosti, Rozhledny, Botanické zahrady, Zábavní centra, Církevní památky, Hudební kluby, Rybaření, Solné jeskyně, atd."
+                description="JEDNA kategorie (ne seznam!): hrady, zámky, muzea, pivovary, restaurace, zoo, divadla, kina, lázně, koupaliště, příroda, rozhledny, galerie, atd. NEPOUŽÍVEJ čárky!"
             ),
             "region": genai.protos.Schema(
                 type=genai.protos.Type.STRING,

@@ -88,47 +88,34 @@ def hledej_mista_na_rande(
         # Romantická místa - kombinace vhodných kategorií
         if romanticky or typ_dotazu == "romantic":
             romantic_categories = [
-                "Zámky", "Hrady", "Rozhledny", "Přírodní", 
-                "Botanické", "Lázně", "Pivovary", "Divadla",
-                "Muzea", "Galerie", "Kina", "Restaurace"
+                "romantické", "hrad", "zámek", "rozhledna", "výhled",
+                "příroda", "park", "zahrada", "lázně", "wellness",
+                "pivovar", "restaurace", "galerie", "museum", "klidné"
             ]
-            query["source_file"] = {
-                "$regex": "|".join(romantic_categories), 
-                "$options": "i"
-            }
+            query["kategorie"] = {"$in": romantic_categories}
         
         # Venkovní aktivity
         elif venkovni:
             outdoor_categories = [
-                "Přírodní", "Rozhledny", "Botanické", 
-                "Koupání", "sport", "Golf", "Rybaření"
+                "venkovní", "příroda", "park", "rozhledna",
+                "koupání", "sport", "aktivní", "turistika", "golf"
             ]
-            query["source_file"] = {
-                "$regex": "|".join(outdoor_categories),
-                "$options": "i"
-            }
+            query["kategorie"] = {"$in": outdoor_categories}
         
         # Kulturní místa
         elif kulturni:
             cultural_categories = [
-                "Muzea", "Galerie", "Divadla", "Kina",
-                "Hrady", "Zámky", "Církevní", "Kulturní", 
-                "Technické", "Národní", "Hudební", "Festival"
+                "kulturní", "museum", "galerie", "divadlo", "kino",
+                "hrad", "zámek", "církevní", "historické", "památka"
             ]
-            query["source_file"] = {
-                "$regex": "|".join(cultural_categories),
-                "$options": "i"
-            }
+            query["kategorie"] = {"$in": cultural_categories}
         
         # Wellness a relaxace
         elif wellness:
             wellness_categories = [
-                "Lázně", "Solné jeskyně", "Koupání"
+                "lázně", "wellness", "relaxace", "klidné", "koupání"
             ]
-            query["source_file"] = {
-                "$regex": "|".join(wellness_categories),
-                "$options": "i"
-            }
+            query["kategorie"] = {"$in": wellness_categories}
         
         # Textové vyhledávání
         elif typ_dotazu == "text_search" and hledany_text:
@@ -136,7 +123,39 @@ def hledej_mista_na_rande(
         
         # Vyhledávání podle kategorie
         elif typ_dotazu == "category" and kategorie:
-            query["source_file"] = {"$regex": kategorie, "$options": "i"}
+            # Mapování uživatelských dotazů na AI kategorie
+            kategorie_lower = kategorie.lower()
+            
+            kategorie_mapping = {
+                "hrady": ["hrad"],
+                "hrad": ["hrad"],
+                "zámky": ["zámek"],
+                "zámek": ["zámek"],
+                "lázně": ["lázně", "wellness"],
+                "koupaliště": ["koupání", "aquapark", "bazén"],
+                "koupání": ["koupání", "aquapark", "bazén"],
+                "letní koupání": ["koupání", "aquapark", "bazén"],
+                "muzea": ["museum"],
+                "museum": ["museum"],
+                "pivovary": ["pivovar"],
+                "pivovar": ["pivovar"],
+                "restaurace": ["restaurace"],
+                "zoo": ["zoo"],
+                "příroda": ["příroda"],
+                "rozhledny": ["rozhledna"],
+                "rozhledna": ["rozhledna"],
+                "divadla": ["divadlo"],
+                "divadlo": ["divadlo"],
+                "galerie": ["galerie"],
+                "kina": ["kino"]
+            }
+            
+            # Pokud je kategorie v mappingu, použij seznam
+            if kategorie_lower in kategorie_mapping:
+                query["kategorie"] = {"$in": kategorie_mapping[kategorie_lower]}
+            else:
+                # Jinak hledej přímou shodu v kategoriích
+                query["kategorie"] = kategorie_lower
         
         # Geolokační vyhledávání
         elif typ_dotazu == "geospatial" and sirka and delka:
