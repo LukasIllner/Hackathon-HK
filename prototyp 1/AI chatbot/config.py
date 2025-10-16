@@ -17,7 +17,7 @@ DATABASE_NAME = os.getenv('DATABASE_NAME', 'hackathon_hk')
 COLLECTION_NAME = os.getenv('COLLECTION_NAME', 'places')
 
 # Model konfigurace
-GEMINI_MODEL = 'gemini-2.0-flash-exp'
+GEMINI_MODEL = 'gemini-2.0-flash'
 
 # Timeout konfigurace
 MONGODB_TIMEOUT = 10000  # ms
