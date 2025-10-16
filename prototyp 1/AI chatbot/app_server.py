@@ -112,7 +112,12 @@ class ChatSession:
                                 if function_result.get('uspech') and function_result.get('mista'):
                                     locations.extend(function_result['mista'])
                                 
-                                print(f"✅ Nalezeno {function_result.get('pocet', 0)} míst")
+                                pocet_nalezeno = function_result.get('pocet', 0)
+                                print(f"✅ Nalezeno {pocet_nalezeno} míst")
+                                
+                                # Pokud nic nenalezeno, přidej info do výsledku
+                                if pocet_nalezeno == 0:
+                                    function_result['zprava_pro_ai'] = "ŽÁDNÉ VÝSLEDKY - tato kategorie není v databázi. Informuj uživatele a nabídni jiné kategorie které máme."
                             else:
                                 function_result = {"uspech": False, "chyba": "Neznámá funkce"}
                             
@@ -137,7 +142,7 @@ class ChatSession:
                             if hasattr(part, 'text'):
                                 response_text = part.text
                                 
-                                # FALLBACK: Detekuj jestli AI omylem poslala kód nebo meta-komentář
+                                # FALLBACK: Detekuj problematické odpovědi
                                 forbidden_phrases = [
                                     'print(',
                                     'hledej_mista_na_rande(',
@@ -149,9 +154,16 @@ class ChatSession:
                                     'Už se těším, co objevím'
                                 ]
                                 
+                                # Pokud AI odpověděla BEZ volání funkce když měla
                                 if any(phrase in response_text for phrase in forbidden_phrases):
                                     print(f"⚠️ AI poslala meta-komentář nebo kód! Text: {response_text[:100]}")
                                     response_text = "Omlouvám se, zkus to prosím znovu - napiš mi konkrétně co hledáš, třeba 'hrady' nebo 'pivovary'."
+                                
+                                # KRITICKÉ: Pokud AI odpověděla, ale nezavolala funkci a nejsou žádná místa
+                                elif len(locations) == 0 and len(response_text) > 100:
+                                    # AI pravděpodobně vymýšlí ze své paměti
+                                    print(f"⚠️ AI odpověděla bez volání funkce! Locations: {len(locations)}, Text length: {len(response_text)}")
+                                    response_text = "Bohužel tuto kategorii v naší databázi nemáme. Můžeš zkusit: hrady, zámky, pivovary, lázně, muzea, rozhledny, zoo, koupaliště nebo restaurace. Co tě zajímá?"
                         break
                 else:
                     break
