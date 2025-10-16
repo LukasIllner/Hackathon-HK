@@ -1,5 +1,23 @@
+Hudební kluby a festival parky
+https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Hudební_kluby_a_festival_parky/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
+
+
+Muzea a galerie
+https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Muzea_a_galerie/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
+
+
+Lázně
+https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Lázně/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
+
+
+Golfové hřiště
+https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Golfová_hřiště/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
+
+
+_____________________________
 Trvalé záštity Rady Královehradeckého kraje (Festivaly)
 https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Trvalé_záštity_Rady_Královéhradeckého_kraje/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
+
 
 
 Přírodní parky
@@ -22,15 +40,6 @@ https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Technické_pa
 
 Zábavní centra
 https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Zábavní_centra/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
-
-
-Památkové rezervace
-https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Památkové_rezervace/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
-
-
-Památkové zóny
-https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Památkové_zóny/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
-
 
 Národní kulturní památky
 https://services6.arcgis.com/ogJAiK65nXL1mXAW/arcgis/rest/services/Národní_kulturní_památky_liniové_objekty/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
