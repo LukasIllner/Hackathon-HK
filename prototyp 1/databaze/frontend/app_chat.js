@@ -19,6 +19,14 @@ const chatInput = document.getElementById('chat-input');
 const chatSendBtn = document.getElementById('chat-send-btn');
 const chatPlaceholder = document.getElementById('chat-placeholder');
 
+// Konfigurace pro markdown
+marked.setOptions({
+    breaks: true,        // Převést \n na <br>
+    gfm: true,          // GitHub Flavored Markdown
+    headerIds: false,   // Nepoužívat ID na nadpisy
+    mangle: false       // Nepoužívat email obfuscation
+});
+
 // Ikony pro různé typy míst
 const typeIcons = {
     'kultura': '🏛️',
@@ -61,20 +69,44 @@ function addMessage(text, isUser = false) {
     if (chatPlaceholder) {
         chatPlaceholder.style.display = 'none';
     }
-    
+
     const messageDiv = document.createElement('div');
     messageDiv.className = `message message-${isUser ? 'user' : 'assistant'}`;
-    
+
     const bubble = document.createElement('div');
     bubble.className = 'message-bubble';
-    bubble.textContent = text;
-    
+
+    if (isUser) {
+        // User zprávy jsou plain text
+        bubble.textContent = text;
+    } else {
+        // AI zprávy používají markdown
+        try {
+            // Zkusíme použít marked.js pokud je dostupný
+            if (typeof marked !== 'undefined') {
+                // Sanitizace a převod markdown na HTML
+                let html = marked.parse(text);
+                // Zajistíme, že emoji a speciální znaky se zobrazí správně
+                html = html.replace(/:([a-zA-Z0-9_+-]+):/g, (match, emojiName) => {
+                    return match; // Zatím ponecháme jako je
+                });
+                bubble.innerHTML = html;
+            } else {
+                // Fallback na plain text
+                bubble.textContent = text;
+            }
+        } catch (error) {
+            console.warn('Markdown parsing failed, using plain text:', error);
+            bubble.textContent = text;
+        }
+    }
+
     messageDiv.appendChild(bubble);
     chatMessages.appendChild(messageDiv);
-    
+
     // Scroll dolů
     chatMessages.scrollTop = chatMessages.scrollHeight;
-    
+
     return messageDiv;
 }
 

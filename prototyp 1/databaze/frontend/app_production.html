@@ -121,11 +121,70 @@
             border-bottom-left-radius: 4px;
         }
 
-        .message-timestamp {
-            font-size: 10px;
-            color: #999;
-            margin-top: 4px;
-            text-align: right;
+        .message-bubble h1,
+        .message-bubble h2,
+        .message-bubble h3,
+        .message-bubble h4,
+        .message-bubble h5,
+        .message-bubble h6 {
+            margin: 0 0 8px 0;
+            font-weight: bold;
+        }
+
+        .message-bubble h1 { font-size: 18px; }
+        .message-bubble h2 { font-size: 16px; }
+        .message-bubble h3 { font-size: 15px; }
+
+        .message-bubble p {
+            margin: 0 0 8px 0;
+            line-height: 1.4;
+        }
+
+        .message-bubble strong,
+        .message-bubble b {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .message-bubble em,
+        .message-bubble i {
+            font-style: italic;
+            color: #666;
+        }
+
+        .message-bubble ul,
+        .message-bubble ol {
+            margin: 0 0 8px 0;
+            padding-left: 20px;
+        }
+
+        .message-bubble li {
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        .message-bubble code {
+            background: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        .message-bubble pre {
+            background: #f5f5f5;
+            padding: 8px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 0 0 8px 0;
+        }
+
+        .message-bubble blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 12px;
+            margin: 0 0 8px 0;
+            color: #666;
+            font-style: italic;
         }
 
         .message-loading {
@@ -523,6 +582,7 @@
     </div>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="app_chat.js"></script>
 </body>
 </html>
