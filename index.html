@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoJSON Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map { height: 500px; }
+    </style>
+</head>
+<body>
+    <select id="geojson-select">
+        <option value="Botanické_zahrady_a_arboreta_-5522835780519262316.geojson">Botanické_zahrady_a_arboreta_-5522835780519262316.geojson</option>
+        <option value="Domovy_d%C4%9Bt%C3%AD_a_ml%C3%A1de%C5%BEe_a_st%C5%99ediska_voln%C3%A9ho_%C4%8Dasu.geojson">Domovy_d%C4%9Bt%C3%AD_a_ml%C3%A1de%C5%BEe_a_st%C5%99ediska_voln%C3%A9ho_%C4%8Dasu.geojson</option>
+        <option value="Golfová_hřiště_4715173886898598008.geojson">Golfová_hřiště_4715173886898598008.geojson</option>
+        <option value="Hudební_kluby_a_festival_parky_-2074650602851631956.geojson">Hudební_kluby_a_festival_parky_-2074650602851631956.geojson</option>
+        <option value="Kina_565245810561569481.geojson">Kina_565245810561569481.geojson</option>
+        <option value="Kulturní_domy_-6221681178034195435.geojson">Kulturní_domy_-6221681178034195435.geojson</option>
+        <option value="Lázně_-2911614395338445486.geojson">Lázně_-2911614395338445486.geojson</option>
+        <option value="Letiště_-9027462957580168865.geojson">Letiště_-9027462957580168865.geojson</option>
+        <option value="Letní_koupání_-2112140724867971482.geojson">Letní_koupání_-2112140724867971482.geojson</option>
+        <option value="Muzea_a_galerie_-9207005250755337365.geojson">Muzea_a_galerie_-9207005250755337365.geojson</option>
+        <option value="Národní_kulturní_památky_plošné_objekty_7007275860108896765.geojson">Národní_kulturní_památky_plošné_objekty_7007275860108896765.geojson</option>
+        <option value="Nemocnice_-8008920071301765846.geojson">Nemocnice_-8008920071301765846.geojson</option>
+        <option value="Odborné_léčebné_ústavy_-2694005083983775739.geojson">Odborné_léčebné_ústavy_-2694005083983775739.geojson</option>
+        <option value="Pivovary_395375255197033941.geojson">Pivovary_395375255197033941.geojson</option>
+        <option value="Plochy_pro_sportovní_létající_zařízení_-2383887854102267607.geojson">Plochy_pro_sportovní_létající_zařízení_-2383887854102267607.geojson</option>
+        <option value="Poskytovatelé_sociálních_služeb_4436425558489695178.geojson">Poskytovatelé_sociálních_služeb_4436425558489695178.geojson</option>
+        <option value="Právní_subjekty_vykonávající_činnost_škol_a_školských_zařízení_-7412274125603053349.geojson">Právní_subjekty_vykonávající_činnost_škol_a_školských_zařízení_-7412274125603053349.geojson</option>
+        <option value="Seznam_škol_a_školských_zařízení_2540459428352761687.geojson">Seznam_škol_a_školských_zařízení_2540459428352761687.geojson</option>
+        <option value="Trvalé_záštity_Rady_Královéhradeckého_kraje_7949772460946517643.geojson">Trvalé_záštity_Rady_Královéhradeckého_kraje_7949772460946517643.geojson</option>
+        <option value="Základní_umělecké_školy_7990975598329074933.geojson">Základní_umělecké_školy_7990975598329074933.geojson</option>
+        <option value="ZOO_a_zooparky_-6340533464046617208.geojson">ZOO_a_zooparky_-6340533464046617208.geojson</option>
+    </select>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([50.2099, 15.8325], 10); // Centered on Hradec Králové
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        const select = document.getElementById('geojson-select');
+        let geojsonLayer;
+
+        function loadGeoJSON(fileName) {
+            fetch(`data_hk/${fileName}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (geojsonLayer) {
+                        map.removeLayer(geojsonLayer);
+                    }
+                    geojsonLayer = L.geoJSON(data, {
+                        onEachFeature: function (feature, layer) {
+                            if (feature.properties && feature.properties.nazev) {
+                                layer.bindPopup(feature.properties.nazev);
+                            }
+                        },
+                        coordsToLatLng: function (coords) {
+                            // coords is an array of [longitude, latitude, altitude]
+                            return new L.LatLng(coords[1], coords[0]); // Leaflet expects [latitude, longitude]
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+        }
+
+        // Load the first file by default
+        loadGeoJSON(select.value);
+
+        select.addEventListener('change', (event) => {
+            loadGeoJSON(event.target.value);
+        });
+    </script>
+</body>
+</html>

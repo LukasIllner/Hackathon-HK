@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoJSON Debug</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>#map { height: 500px; }</style>
+</head>
+<body>
+    <h1>Debug Page</h1>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        console.log("Map script started.");
+
+        const map = L.map('map').setView([50.2099, 15.8325], 10);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        console.log("Map initialized.");
+
+        fetch('data_hk/Botanické_zahrady_a_arboreta_-5522835780519262316.geojson')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                console.log("Fetch response OK.");
+                return response.json();
+            })
+            .then(data => {
+                console.log("GeoJSON data loaded:", data);
+                L.geoJSON(data, {
+                    onEachFeature: function (feature, layer) {
+                        if (feature.properties && feature.properties.nazev) {
+                            layer.bindPopup(feature.properties.nazev);
+                        }
+                    }
+                }).addTo(map);
+                console.log("GeoJSON layer added to map.");
+            })
+            .catch(error => {
+                console.error('Error loading GeoJSON:', error);
+                alert('Failed to load GeoJSON. Check the developer console for details.');
+            });
+    </script>
+</body>
+</html>
