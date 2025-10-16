@@ -67,18 +67,7 @@ function addMessage(text, isUser = false) {
     
     const bubble = document.createElement('div');
     bubble.className = 'message-bubble';
-    
-    // Pro AI zprávy použij markdown parsing
-    if (!isUser && typeof marked !== 'undefined') {
-        // Konfigurace marked
-        marked.setOptions({
-            breaks: true,  // Line breaks
-            gfm: true      // GitHub Flavored Markdown
-        });
-        bubble.innerHTML = marked.parse(text);
-    } else {
-        bubble.textContent = text;
-    }
+    bubble.textContent = text;
     
     messageDiv.appendChild(bubble);
     chatMessages.appendChild(messageDiv);

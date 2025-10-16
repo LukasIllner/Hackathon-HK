@@ -112,12 +112,7 @@ class ChatSession:
                                 if function_result.get('uspech') and function_result.get('mista'):
                                     locations.extend(function_result['mista'])
                                 
-                                pocet_nalezeno = function_result.get('pocet', 0)
-                                print(f"✅ Nalezeno {pocet_nalezeno} míst")
-                                
-                                # Pokud nic nenalezeno, přidej info do výsledku
-                                if pocet_nalezeno == 0:
-                                    function_result['zprava_pro_ai'] = "ŽÁDNÉ VÝSLEDKY - tohle v kraji nemáme. Nabídni uživateli jiné zajímavé možnosti (hrady, pivovary, lázně...) PŘIROZENĚ, BEZ zmínky o kategoriích nebo databázi."
+                                print(f"✅ Nalezeno {function_result.get('pocet', 0)} míst")
                             else:
                                 function_result = {"uspech": False, "chyba": "Neznámá funkce"}
                             
@@ -142,22 +137,10 @@ class ChatSession:
                             if hasattr(part, 'text'):
                                 response_text = part.text
                                 
-                                # FALLBACK: Detekuj problematické odpovědi
-                                forbidden_phrases = [
-                                    'print(',
-                                    'hledej_mista_na_rande(',
-                                    'default_api',
-                                    'Zavolej funkci',
-                                    'zavolám funkci',
-                                    'už vyhledávám',
-                                    'momentálně ti hledám',
-                                    'Už se těším, co objevím'
-                                ]
-                                
-                                # FALLBACK: Detekuj jestli AI omylem poslala kód nebo meta-komentář
-                                if any(phrase in response_text for phrase in forbidden_phrases):
-                                    print(f"⚠️ AI poslala meta-komentář nebo kód! Text: {response_text[:100]}")
-                                    response_text = "Omlouvám se, zkus to prosím znovu - napiš mi konkrétně co hledáš, třeba 'hrady' nebo 'pivovary'."
+                                # FALLBACK: Detekuj jestli AI omylem poslala kód
+                                if 'print(' in response_text or 'hledej_mista_na_rande(' in response_text or 'default_api' in response_text:
+                                    print("⚠️ AI poslala kód místo volání funkce! Opravuji...")
+                                    response_text = "Omlouvám se, momentálně nemůžu vyhledat. Můžeš zkusit zadat konkrétnější dotaz, například: 'najdi hrady' nebo 'ukaž pivovary'."
                         break
                 else:
                     break
