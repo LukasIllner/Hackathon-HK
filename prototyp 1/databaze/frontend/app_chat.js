@@ -151,21 +151,56 @@ function showLocationsOnMap(locations) {
     const bounds = [];
     
     locations.forEach((location, index) => {
-        // Získání souřadnic - zkus různé formáty
+        // Získání souřadnic - zkus různé formáty z databáze
         let lat, lon;
-        
+
+        // Formát 1: location.lat, location.lon (starý formát)
         if (location.lat && location.lon) {
             lat = location.lat;
             lon = location.lon;
-        } else if (location.souradnice && location.souradnice.length >= 2) {
+        }
+        // Formát 2: location.souradnice jako pole [lon, lat]
+        else if (location.souradnice && Array.isArray(location.souradnice) && location.souradnice.length >= 2) {
             lon = location.souradnice[0];
             lat = location.souradnice[1];
-        } else {
+        }
+        // Formát 3: location.geometry.coordinates jako [lon, lat]
+        else if (location.geometry && location.geometry.coordinates && Array.isArray(location.geometry.coordinates) && location.geometry.coordinates.length >= 2) {
+            lon = location.geometry.coordinates[0];
+            lat = location.geometry.coordinates[1];
+        }
+        // Formát 4: location.coordinates jako [lon, lat]
+        else if (location.coordinates && Array.isArray(location.coordinates) && location.coordinates.length >= 2) {
+            lon = location.coordinates[0];
+            lat = location.coordinates[1];
+        }
+        // Formát 5: location.gps jako [lat, lon] nebo string
+        else if (location.gps) {
+            if (Array.isArray(location.gps) && location.gps.length >= 2) {
+                lat = location.gps[0];
+                lon = location.gps[1];
+            } else if (typeof location.gps === 'string') {
+                // Parsování string GPS formátu "lat,lon"
+                const parts = location.gps.split(',').map(p => parseFloat(p.trim()));
+                if (parts.length >= 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+                    lat = parts[0];
+                    lon = parts[1];
+                }
+            }
+        }
+        else {
             console.warn('⚠️ Místo bez souřadnic:', location);
+            console.warn('📋 Dostupné vlastnosti:', Object.keys(location));
             return;
         }
-        
-        console.log(`📍 Přidávám marker: ${location.nazev} [${lat}, ${lon}]`);
+
+        // Kontrola validity souřadnic
+        if (isNaN(lat) || isNaN(lon) || lat < -90 || lat > 90 || lon < -180 || lon > 180) {
+            console.warn(`⚠️ Neplatné souřadnice pro místo ${location.nazev || location.id}: [${lat}, ${lon}]`);
+            return;
+        }
+
+        console.log(`📍 Přidávám marker: ${location.nazev || 'Bez názvu'} [${lat}, ${lon}]`);
         const latLng = [lat, lon];
         bounds.push(latLng);
         
@@ -207,6 +242,9 @@ function showLocationsOnMap(locations) {
         map.flyTo(bounds[0], 14, { duration: 1.5 });
     } else if (bounds.length > 1) {
         map.flyToBounds(bounds, { padding: [50, 50], duration: 1.5 });
+    } else {
+        console.warn('⚠️ Žádná platná místa k zobrazení na mapě');
+        return;
     }
     
     // Zobrazit detail prvního místa
@@ -254,8 +292,9 @@ function showPlaceDetails(place) {
     const lat = coords[1];
     const lon = coords[0];
     
-    const category = place.typ_muzea || place.typ || getPlaceType(place.source_file);
-    const navigateUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}`;
+    // Kontrola validity souřadnic pro navigaci
+    const validCoords = !isNaN(lat) && !isNaN(lon) && lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180;
+    const navigateUrl = validCoords ? `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}` : '#';
     
     placeInfo.innerHTML = `
         <div class="place-title">${name}</div>
@@ -266,7 +305,7 @@ function showPlaceDetails(place) {
         <div class="place-details">
             <div class="detail-row">
                 <i class="fas fa-map-marker-alt"></i>
-                <span>${lat.toFixed(4)}, ${lon.toFixed(4)}</span>
+                <span>${validCoords ? `${lat.toFixed(4)}, ${lon.toFixed(4)}` : 'Souřadnice nedostupné'}</span>
             </div>
             
             <div class="detail-row">
@@ -295,9 +334,15 @@ function showPlaceDetails(place) {
         </div>
         
         <div class="place-actions">
-            <a href="${navigateUrl}" target="_blank" class="place-btn btn-navigate">
-                <i class="fas fa-directions"></i> Navigovat
-            </a>
+            ${validCoords ? `
+                <a href="${navigateUrl}" target="_blank" class="place-btn btn-navigate">
+                    <i class="fas fa-directions"></i> Navigovat
+                </a>
+            ` : `
+                <button class="place-btn btn-navigate" disabled style="opacity: 0.5; cursor: not-allowed;">
+                    <i class="fas fa-directions"></i> Navigace nedostupná
+                </button>
+            `}
             ${website ? `
                 <a href="${website}" target="_blank" class="place-btn btn-website">
                     <i class="fas fa-external-link-alt"></i> Web
@@ -369,9 +414,35 @@ async function sendMessage(message) {
         if (data.locations && data.locations.length > 0) {
             console.log(`✅ AI našla ${data.locations.length} míst`);
             console.log('🗺️ První místo:', data.locations[0]);
+            
+            // Spočítat kolik míst má platné souřadnice
+            let validLocations = 0;
+            data.locations.forEach((location, index) => {
+                if (location.lat && location.lon) {
+                    validLocations++;
+                } else if (location.souradnice && location.souradnice.length >= 2) {
+                    validLocations++;
+                } else if (location.geometry && location.geometry.coordinates && location.geometry.coordinates.length >= 2) {
+                    validLocations++;
+                }
+            });
+            
+            console.log(`📊 ${validLocations}/${data.locations.length} míst má platné souřadnice`);
+            
+            if (validLocations === 0) {
+                console.warn('⚠️ Žádné místo nemá platné souřadnice!');
+                addMessage('Našel jsem místa, ale žádné z nich nemá platné souřadnice pro zobrazení na mapě. Zkus jiný dotaz.', false);
+            } else if (validLocations < data.locations.length) {
+                console.warn(`⚠️ ${data.locations.length - validLocations} míst bez souřadnic`);
+                addMessage(`Našel jsem ${validLocations} míst se souřadnicemi z celkových ${data.locations.length}. Některá místa se nezobrazí na mapě.`, false);
+            }
+            
             showLocationsOnMap(data.locations);
         } else {
             console.log('⚠️ Žádná místa k zobrazení');
+            if (data.response && data.response.toLowerCase().includes('našel') && data.response.toLowerCase().includes('míst')) {
+                addMessage('Našel jsem místa, ale došlo k problému při jejich zobrazení na mapě. Zkus prosím jiný dotaz.', false);
+            }
         }
         
         // Log tool calls
