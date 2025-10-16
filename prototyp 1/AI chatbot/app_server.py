@@ -137,10 +137,21 @@ class ChatSession:
                             if hasattr(part, 'text'):
                                 response_text = part.text
                                 
-                                # FALLBACK: Detekuj jestli AI omylem poslala kód
-                                if 'print(' in response_text or 'hledej_mista_na_rande(' in response_text or 'default_api' in response_text:
-                                    print("⚠️ AI poslala kód místo volání funkce! Opravuji...")
-                                    response_text = "Omlouvám se, momentálně nemůžu vyhledat. Můžeš zkusit zadat konkrétnější dotaz, například: 'najdi hrady' nebo 'ukaž pivovary'."
+                                # FALLBACK: Detekuj jestli AI omylem poslala kód nebo meta-komentář
+                                forbidden_phrases = [
+                                    'print(',
+                                    'hledej_mista_na_rande(',
+                                    'default_api',
+                                    'Zavolej funkci',
+                                    'zavolám funkci',
+                                    'už vyhledávám',
+                                    'momentálně ti hledám',
+                                    'Už se těším, co objevím'
+                                ]
+                                
+                                if any(phrase in response_text for phrase in forbidden_phrases):
+                                    print(f"⚠️ AI poslala meta-komentář nebo kód! Text: {response_text[:100]}")
+                                    response_text = "Omlouvám se, zkus to prosím znovu - napiš mi konkrétně co hledáš, třeba 'hrady' nebo 'pivovary'."
                         break
                 else:
                     break
