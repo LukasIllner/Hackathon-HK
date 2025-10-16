@@ -1,0 +1,2417 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3405000000001,
+          50.4344
+        ]
+      },
+      "properties": {
+        "nazev": "Hvězdárna Jičín",
+        "popis": "Hvězdárna vznikla začátkem 60. letech 20. století v objektu bývalé prachárny.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Jičín",
+        "kod_orp": "5207",
+        "nazev_obce": "Jičín",
+        "kod_obce": "572659",
+        "nazev_ulice": "Raisova ",
+        "cislo_domovni": "310",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50601",
+        "www": "http://www.hvezdarnajicin.cz",
+        "telefon": "+420737203504",
+        "wkt": "POINT(50.4344 15.3405)",
+        "x": 15.3405,
+        "y": 50.4344,
+        "dp_id": "TECHP1",
+        "ds_id": "4499",
+        "OBJECTID": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7312000000001,
+          50.7278000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Historický důl Kovárna v Obřím dole",
+        "popis": "Navštivte podzemí nejvyšší české hory Sněžky - důl Kovárna.\r\n\r\n \r\nNa vrcholu Sněžky byl každý - dobrodružství v podzemí čeká jen na Vás!",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Pec pod Sněžkou",
+        "kod_obce": "579581",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54221",
+        "www": "http://www.speleoalberice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.7278 15.7312)",
+        "x": 15.7312,
+        "y": 50.7278,
+        "dp_id": "TECHP2",
+        "ds_id": "5959",
+        "OBJECTID": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3498000000001,
+          50.4395000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Vodárenská věž, Jičín",
+        "popis": "První písemná zmínka o druhé nejstarší dochované stavbě v Jičíně (po kostelu Sv. Ignáce), v historických pramenech zvané prostě Věž, se nachází v listině Mikuláše Trčky z Lípy vydané 6. července 1502.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Jičín",
+        "kod_orp": "5207",
+        "nazev_obce": "Jičín",
+        "kod_obce": "572659",
+        "nazev_ulice": "Kollárova ",
+        "cislo_domovni": "532",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50601",
+        "www": "http://www.vezjicin.cz",
+        "telefon": "+420602265847",
+        "wkt": "POINT(50.4395 15.3498)",
+        "x": 15.3498,
+        "y": 50.4395,
+        "dp_id": "TECHP3",
+        "ds_id": "7298",
+        "OBJECTID": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6558000000001,
+          50.6526000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Zvonkohra v obci Dolní Dvůr",
+        "popis": "Unikátní zvonkohra je umístěna na kostele v obci Dolní Dvůr.\r\n\r\n",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Vrchlabí",
+        "kod_orp": "5215",
+        "nazev_obce": "Dolní Dvůr",
+        "kod_obce": "579149",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54342",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.6526 15.6558)",
+        "x": 15.6558,
+        "y": 50.6526,
+        "dp_id": "TECHP4",
+        "ds_id": "7710",
+        "OBJECTID": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5244000000001,
+          50.4873000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Pivovar Nová Paka",
+        "popis": "Základní kámen novopackého pivovaru byl položen roku 1871 a už o rok později byla uvařena první várka piva. Zajímavostí jistě je, že výroba od této doby nebyla nikdy přerušena. Novopacký pivovar tak stále zachovává tradiční způsob výroby lahodného chmelového moku.\r\nPivovar získal mnohá ocenění, za největší úspěch však považuje vzrůstající oblibu a spotřebu novopackého piva v Čechách i v zahraničí.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Nová Paka",
+        "kod_orp": "5210",
+        "nazev_obce": "Nová Paka",
+        "kod_obce": "573248",
+        "nazev_ulice": "Pivovarská ",
+        "cislo_domovni": "400",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50901",
+        "www": "http://www.novopackepivo.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4873 15.5244)",
+        "x": 15.5244,
+        "y": 50.4873,
+        "dp_id": "TECHP5",
+        "ds_id": "9897",
+        "OBJECTID": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3813000000001,
+          50.4733000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Mlýn Oldřicha Prášila",
+        "popis": "Kompletně zařízený válcový mlýn.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Jičín",
+        "kod_orp": "5207",
+        "nazev_obce": "Železnice",
+        "kod_obce": "573825",
+        "nazev_ulice": "Palackého ",
+        "cislo_domovni": "77",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50713",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.4733 15.3813)",
+        "x": 15.3813,
+        "y": 50.4733,
+        "dp_id": "TECHP6",
+        "ds_id": "10019",
+        "OBJECTID": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1793000000001,
+          50.5175
+        ]
+      },
+      "properties": {
+        "nazev": "Muzeum Mlýn Dřevíček, Horní Dřevíč",
+        "popis": "Obilný, vodní mlýn vybudovaný v letech 1920-1940. Kompletní technické vybavení s ukázkou funkčního provozu.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Náchod",
+        "kod_orp": "5209",
+        "nazev_obce": "Stárkov",
+        "kod_obce": "574465",
+        "nazev_ulice": "Horní Dřevíč",
+        "cislo_domovni": "3",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "54931",
+        "www": "http://www.mlyndrevicek.cz",
+        "telefon": "+420739049450",
+        "wkt": "POINT(50.5175 16.1793)",
+        "x": 16.1793,
+        "y": 50.5175,
+        "dp_id": "TECHP7",
+        "ds_id": "100081",
+        "OBJECTID": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8288000000001,
+          50.2144000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Městské Lázně – Aquacentrum, Hradec Králové",
+        "popis": "Městské lázně jsou dílem architekta Oldřicha Lisky, po svém dokončení v roce 1933 byly nejmodernějšími v celém Československu, a to především díky umělému vlnobití od firmy Kolben a Daněk. I přes modernizaci lázní a přeměnu na aquacentrum v roce 1998 zůstalo vlnobití stále vyhledávaným prvkem.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": "Eliščino nábř.",
+        "cislo_domovni": "842",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": "3",
+        "psc": "50003",
+        "www": "http://www.snhk.cz/lazne",
+        "telefon": "+420731459339",
+        "wkt": "POINT(50.2144 15.8288)",
+        "x": 15.8288,
+        "y": 50.2144,
+        "dp_id": "TECHP8",
+        "ds_id": "100137",
+        "OBJECTID": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9941000000001,
+          50.2013000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Třebechovické muzeum betlémů",
+        "popis": "Třebechovické muzeum betlémů je odborným pracovištěm specializujícím se na dokumentaci statických a mechanických betlémů. Nabízí muzeím a soukromým sběratelům odborné poradenství při restaurování mechanických betlémů. Je jediným zařízením svého druhu v České republice.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Třebechovice pod Orebem",
+        "kod_obce": "571041",
+        "nazev_ulice": "Masarykovo nám.",
+        "cislo_domovni": "1426",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50346",
+        "www": "http://www.betlem.cz",
+        "telefon": "+420702175450",
+        "wkt": "POINT(50.2013 15.9941)",
+        "x": 15.9941,
+        "y": 50.2013,
+        "dp_id": "TECHP9",
+        "ds_id": "100158",
+        "OBJECTID": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5356,
+          50.2050000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Sušárna čekanky, Bydžovská Lhotka",
+        "popis": "Technická památka sloužící k výrobě rozšířené kávové náhražky.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Nový Bydžov",
+        "kod_orp": "5212",
+        "nazev_obce": "Měník",
+        "kod_obce": "570397",
+        "nazev_ulice": "Bydžovská Lhotka",
+        "cislo_domovni": "52",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50401",
+        "www": "http://www.menik.cz",
+        "telefon": null,
+        "wkt": "POINT(50.2050 15.5356)",
+        "x": 15.5356,
+        "y": 50.205,
+        "dp_id": "TECHP10",
+        "ds_id": "100160",
+        "OBJECTID": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0300000000001,
+          50.19
+        ]
+      },
+      "properties": {
+        "nazev": "Vodní kanál Alba, Třebechovice pod Orebem",
+        "popis": "Uměle vytvořený náhon na mlýny je jedním z nejstarších vodních děl ve východních Čechách a jedním z nejdelších u nás.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Třebechovice pod Orebem",
+        "kod_obce": "571041",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50346",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.1900 16.0300)",
+        "x": 16.03,
+        "y": 50.19,
+        "dp_id": "TECHP11",
+        "ds_id": "100161",
+        "OBJECTID": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8270000000001,
+          50.2079000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Labská vodní elektrárna Hučák",
+        "popis": "Jedna z nejkrásnějších královéhradeckých staveb ve stylu secese.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": "Křižíkova ",
+        "cislo_domovni": "233 ",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50003",
+        "www": "http://https://www.cez.cz/cs/o-cez/infocentra/infocentrum-obnovitelne-zdroje-47598",
+        "telefon": "+420725781564",
+        "wkt": "POINT(50.2079 15.8270)",
+        "x": 15.827,
+        "y": 50.2079,
+        "dp_id": "TECHP12",
+        "ds_id": "100162",
+        "OBJECTID": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8322000000001,
+          50.2061
+        ]
+      },
+      "properties": {
+        "nazev": "Moravský most s Orlickou elektrárnou, Hradec Králové",
+        "popis": "Moravský most a Orlická elektrárna jsou dílem architekta F. Sandera",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50003",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.2061 15.8322)",
+        "x": 15.8322,
+        "y": 50.2061,
+        "dp_id": "TECHP13",
+        "ds_id": "100164",
+        "OBJECTID": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8282,
+          50.2099000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Pražský most, Hradec Králové",
+        "popis": "Pražský most je jednou z typických staveb města Hradec Králové",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50003",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.2099 15.8282)",
+        "x": 15.8282,
+        "y": 50.2099,
+        "dp_id": "TECHP14",
+        "ds_id": "100165",
+        "OBJECTID": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8243000000001,
+          50.2304000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Silniční most Plácky, Hradec Králové",
+        "popis": "Technická památka s vnějším secesním ztvárněním",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50301",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.2304 15.8243)",
+        "x": 15.8243,
+        "y": 50.2304,
+        "dp_id": "TECHP15",
+        "ds_id": "100166",
+        "OBJECTID": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6808000000001,
+          50.2558000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Vodní mlýn, Popovice",
+        "popis": "Roubená budova vodního mlýna vedle nejstaršího dubu na Královéhradecku",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Třesovice",
+        "kod_obce": "571059",
+        "nazev_ulice": null,
+        "cislo_domovni": "30",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50315",
+        "www": "http://www.nechanicko.cz/tresovice/index.php?nid=657",
+        "telefon": null,
+        "wkt": "POINT(50.2558 15.6808)",
+        "x": 15.6808,
+        "y": 50.2558,
+        "dp_id": "TECHP16",
+        "ds_id": "100167",
+        "OBJECTID": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9061,
+          50.3416000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Železniční muzeum Výtopna Jaroměř",
+        "popis": "Stálá expozice historie železniční dopravy. Historická výtopna z konce 19. století představuje v autentickém prostředí období, kdy na železnici vládla pára.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Jaroměř",
+        "kod_orp": "5206",
+        "nazev_obce": "Jaroměř",
+        "kod_obce": "574121",
+        "nazev_ulice": "Nádražní ",
+        "cislo_domovni": "227",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "55101",
+        "www": "http://www.vytopnajaromer.cz",
+        "telefon": "+420728042999",
+        "wkt": "POINT(50.3416 15.9061)",
+        "x": 15.9061,
+        "y": 50.3416,
+        "dp_id": "TECHP17",
+        "ds_id": "100476",
+        "OBJECTID": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1881000000001,
+          50.1608000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Vodní mlýn Ledská",
+        "popis": "Barokní vodní mlýn na říčce Bělé s roubeným patrem a šindelovou střechou.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Kostelec nad Orlicí ",
+        "kod_orp": "5208",
+        "nazev_obce": "Hřibiny-Ledská",
+        "kod_obce": "548642",
+        "nazev_ulice": null,
+        "cislo_domovni": "56",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "51741",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.1608 16.1881)",
+        "x": 16.1881,
+        "y": 50.1608,
+        "dp_id": "TECHP18",
+        "ds_id": "100508",
+        "OBJECTID": 18
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1165000000001,
+          50.2669000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Původní štětová cesta Opočno, Podkostelí",
+        "popis": "Významná součást historického jádra města, městská část Podkostelí, je dalším námětem pro obohacení procházky o krásné panoramatické pohledy na jihovýchodní část zámeckého areálu.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Dobruška",
+        "kod_orp": "5202",
+        "nazev_obce": "Opočno",
+        "kod_obce": "576590",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "51773",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.2669 16.1165)",
+        "x": 16.1165,
+        "y": 50.2669,
+        "dp_id": "TECHP19",
+        "ds_id": "100509",
+        "OBJECTID": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1865000000001,
+          50.3056000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Mlýn u Ondřejovců, Val",
+        "popis": "Mlýn má podobu roubené patrové stavby se sedlovou střechou se zachovalým vnitřním zařízením. ",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Dobruška",
+        "kod_orp": "5202",
+        "nazev_obce": "Val",
+        "kod_obce": "576875",
+        "nazev_ulice": null,
+        "cislo_domovni": "29",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "51801",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.3056 16.1865)",
+        "x": 16.1865,
+        "y": 50.3056,
+        "dp_id": "TECHP20",
+        "ds_id": "100511",
+        "OBJECTID": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3340000000001,
+          50.1128
+        ]
+      },
+      "properties": {
+        "nazev": "Stará císařská silnice Vamberk, Rybná nad Zdobnicí",
+        "popis": "Z období budování komunikační sítě pochází ojediněle zachovaný úsek silnice z 18.století, spojující Vamberk s Rybnou nad Zdobnicí. Silnici dlážděnou velkými kameny oddělují po obvodu hluboké příkopy.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Rychnov nad Kněžnou",
+        "kod_orp": "5213",
+        "nazev_obce": "Rybná nad Zdobnicí",
+        "kod_obce": "576727",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "51755",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.1128 16.3340)",
+        "x": 16.334,
+        "y": 50.1128,
+        "dp_id": "TECHP21",
+        "ds_id": "100512",
+        "OBJECTID": 21
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3421000000001,
+          50.4973000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Vodní mlýn, Cidlina-Pekloves",
+        "popis": "Roubená, ozdobně vyřezávaná patrová budova s jednoduchou pavláčkou pochází asi z 1.poloviny 19.století. ",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Jičín",
+        "kod_orp": "5207",
+        "nazev_obce": "Železnice",
+        "kod_obce": "573825",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50713",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.4973 15.3421)",
+        "x": 15.3421,
+        "y": 50.4973,
+        "dp_id": "TECHP22",
+        "ds_id": "100641",
+        "OBJECTID": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4425000000001,
+          50.4636
+        ]
+      },
+      "properties": {
+        "nazev": "Vodní mlýn Tužín",
+        "popis": "Mlýn na horním konci vsi byl postaven v polovině 18. století. ",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Jičín",
+        "kod_orp": "5207",
+        "nazev_obce": "Radim",
+        "kod_obce": "573370",
+        "nazev_ulice": null,
+        "cislo_domovni": "36",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50713",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.4636 15.4425)",
+        "x": 15.4425,
+        "y": 50.4636,
+        "dp_id": "TECHP23",
+        "ds_id": "100643",
+        "OBJECTID": 23
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0259000000001,
+          50.4949000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Dřevěný silniční most, Havlovice",
+        "popis": "V prostoru Vizmburka, v poloviční vzdálenosti mezi Červeným Kostelcem a Trutnovem, se nalézá 24 metrů dlouhý a 4 metry široký trámový krytý most, který překonává řeku Úpu.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Havlovice",
+        "kod_obce": "579220",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54232",
+        "www": "http://www.icupice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4949 16.0259)",
+        "x": 16.0259,
+        "y": 50.4949,
+        "dp_id": "TECHP24",
+        "ds_id": "100644",
+        "OBJECTID": 24
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9126000000001,
+          50.4118000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Kovárna, Horní Vlčkovice",
+        "popis": "Přízemní roubená stavba se zděnou částí je zakryta vysokou polovalbovou střechou.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Dvůr Králové nad Labem",
+        "kod_orp": "5203",
+        "nazev_obce": "Vlčkovice v Podkrkonoší",
+        "kod_obce": "579831",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54401",
+        "www": "http://www.vlckovice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4118 15.9126)",
+        "x": 15.9126,
+        "y": 50.4118,
+        "dp_id": "TECHP25",
+        "ds_id": "100645",
+        "OBJECTID": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2557,
+          50.4985
+        ]
+      },
+      "properties": {
+        "nazev": "Kovárna, Nízká Srbská",
+        "popis": "Uprostřed městyse Machov, části zvané Nízká Srbská se nachází roubený objekt s popisným číslem 47.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Náchod",
+        "kod_orp": "5209",
+        "nazev_obce": "Machov",
+        "kod_obce": "574210",
+        "nazev_ulice": "Nízká Srbská",
+        "cislo_domovni": "47",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "54963",
+        "www": "http://www.machov-obec.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4985 16.2557)",
+        "x": 16.2557,
+        "y": 50.4985,
+        "dp_id": "TECHP26",
+        "ds_id": "100648",
+        "OBJECTID": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4060000000001,
+          50.5492
+        ]
+      },
+      "properties": {
+        "nazev": "Umlaufův mlýn, Otovice",
+        "popis": "Pozdně barokní mlýn na říčce Stěnavě byl postaven na konci 18. století. ",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Broumov",
+        "kod_orp": "5201",
+        "nazev_obce": "Otovice",
+        "kod_obce": "574317",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54972",
+        "www": "http://www.obecotovice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.5492 16.4060)",
+        "x": 16.406,
+        "y": 50.5492,
+        "dp_id": "TECHP27",
+        "ds_id": "100649",
+        "OBJECTID": 27
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0561000000001,
+          50.4211000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Mandl a vodní mlýn, Ratibořice",
+        "popis": "Technické muzeum v Babiččině údolí s jedinečným exponátem vodního mandlu a historického vodního mlýna.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Náchod",
+        "kod_orp": "5209",
+        "nazev_obce": "Česká Skalice",
+        "kod_obce": "573990",
+        "nazev_ulice": "Ratibořice ",
+        "cislo_domovni": "4",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "55203",
+        "www": "http://www.zamek-ratiborice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4211 16.0561)",
+        "x": 16.0561,
+        "y": 50.4211,
+        "dp_id": "TECHP28",
+        "ds_id": "100651",
+        "OBJECTID": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0475000000001,
+          50.4255000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Viktorčin splav, Ratibořice",
+        "popis": "Viktorčin splav s romantickým zákoutím, které se nachází přímo za Starým Bělidlem.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Náchod",
+        "kod_orp": "5209",
+        "nazev_obce": "Česká Skalice",
+        "kod_obce": "573990",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "55203",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.4255 16.0475)",
+        "x": 16.0475,
+        "y": 50.4255,
+        "dp_id": "TECHP29",
+        "ds_id": "100652",
+        "OBJECTID": 29
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9606000000001,
+          50.6480000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Železniční most, Bernartice",
+        "popis": "Působivý železniční viadukt v Bernarticích je významnou technickou památkou.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Bernartice",
+        "kod_obce": "579050",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54204",
+        "www": "http://www.zacler.cz/",
+        "telefon": null,
+        "wkt": "POINT(50.6480 15.9606)",
+        "x": 15.9606,
+        "y": 50.648,
+        "dp_id": "TECHP30",
+        "ds_id": "100654",
+        "OBJECTID": 30
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7677,
+          50.4580000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Přehrada Les Království, Bílá Třemešná",
+        "popis": "Mezi největší atraktivity Podkrkonoší patří bezesporu přehrada Les Království, přehradní nádrž na řece Labi, která byla vybudována počátkem 20. století.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Dvůr Králové nad Labem",
+        "kod_orp": "5203",
+        "nazev_obce": "Bílá Třemešná",
+        "kod_obce": "579068",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54401",
+        "www": "http://www.pla.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4580 15.7677)",
+        "x": 15.7677,
+        "y": 50.458,
+        "dp_id": "TECHP31",
+        "ds_id": "100655",
+        "OBJECTID": 31
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8334,
+          50.6833000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Soubor dvou mostků, Dolní Lysečiny",
+        "popis": "Půlkruhové mostní oblouky o jednom poli jsou vyskládané z plochých kamenů z místního materiálu. ",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Horní Maršov",
+        "kod_obce": "579262",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54226",
+        "www": "http://www.veselyvylet.cz",
+        "telefon": null,
+        "wkt": "POINT(50.6833 15.8334)",
+        "x": 15.8334,
+        "y": 50.6833,
+        "dp_id": "TECHP32",
+        "ds_id": "100656",
+        "OBJECTID": 32
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7344000000001,
+          50.5373000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Papírna - Pražský Labský mlýn, Hostinné",
+        "popis": "Objekt jedné z nejstarších papíren v Krkonoších a Podkrkonoší.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Vrchlabí",
+        "kod_orp": "5215",
+        "nazev_obce": "Hostinné",
+        "kod_obce": "579297",
+        "nazev_ulice": "Nádražní ",
+        "cislo_domovni": "266",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "54371",
+        "www": "http://www.krpa.cz",
+        "telefon": null,
+        "wkt": "POINT(50.5373 15.7344)",
+        "x": 15.7344,
+        "y": 50.5373,
+        "dp_id": "TECHP33",
+        "ds_id": "100657",
+        "OBJECTID": 33
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6338000000001,
+          50.4549000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Mlýn, Kal u Pecky",
+        "popis": "Roubená stavba z roku 1827 se nachází na cestě z Kalu do Lázní Bělohradu.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Nová Paka",
+        "kod_orp": "5210",
+        "nazev_obce": "Pecka",
+        "kod_obce": "573299",
+        "nazev_ulice": "Kal ",
+        "cislo_domovni": "39",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50782",
+        "www": "http://www.mestys-pecka.cz/mestecko/casti-obce/kal",
+        "telefon": null,
+        "wkt": "POINT(50.4549 15.6338)",
+        "x": 15.6338,
+        "y": 50.4549,
+        "dp_id": "TECHP34",
+        "ds_id": "100658",
+        "OBJECTID": 34
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8896000000001,
+          50.4005000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Inundační most se sochou Krista Salvátora, Kuks",
+        "popis": "Kamenný most spojující lázeňskou a hospitální část barokního areálu.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Dvůr Králové nad Labem",
+        "kod_orp": "5203",
+        "nazev_obce": "Kuks",
+        "kod_obce": "579416",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54443",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.4005 15.8896)",
+        "x": 15.8896,
+        "y": 50.4005,
+        "dp_id": "TECHP35",
+        "ds_id": "100659",
+        "OBJECTID": 35
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8549,
+          50.6251
+        ]
+      },
+      "properties": {
+        "nazev": "Kamenný most a areál bývalých zlatých dolů, Mladé Buky",
+        "popis": "Most je postaven z plochých kamenů z místních zdrojů o půlkruhovém poli.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Mladé Buky",
+        "kod_obce": "579548",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54223",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.6251 15.8549)",
+        "x": 15.8549,
+        "y": 50.6251,
+        "dp_id": "TECHP36",
+        "ds_id": "100661",
+        "OBJECTID": 36
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5855000000001,
+          50.7123000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Labská přehrada, Špindlerův Mlýn",
+        "popis": "Při jižním okraji Špindlerova Mlýna nemůžete přehlédnout elegantní přehradu na horním toku Labe. Jedná se o první přehradu na řece Labi. Byla vybudovaná jako ochrana před ničivými povodněmi a již od roku 1916 zachytává převážnou část sněhových vod ve střední části Krkonoš.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Vrchlabí",
+        "kod_orp": "5215",
+        "nazev_obce": "Špindlerův Mlýn",
+        "kod_obce": "579742",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54351",
+        "www": "http://labska-prehrada.ceskehory.cz",
+        "telefon": null,
+        "wkt": "POINT(50.7123 15.5855)",
+        "x": 15.5855,
+        "y": 50.7123,
+        "dp_id": "TECHP37",
+        "ds_id": "100663",
+        "OBJECTID": 37
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4694000000001,
+          50.4762000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Jiranův mlýn - Úbislavice",
+        "popis": "Roubené patrové stavení s pavlačí a vyřezávaným zábradlím. Nejstarší část zdiva je datována mezi lety 1781-1815.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Nová Paka",
+        "kod_orp": "5210",
+        "nazev_obce": "Úbislavice",
+        "kod_obce": "573655",
+        "nazev_ulice": null,
+        "cislo_domovni": "56",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50792",
+        "www": "http://www.ubislavice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4762 15.4694)",
+        "x": 15.4694,
+        "y": 50.4762,
+        "dp_id": "TECHP38",
+        "ds_id": "100664",
+        "OBJECTID": 38
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9302000000001,
+          50.6676
+        ]
+      },
+      "properties": {
+        "nazev": "Hornický skanzen Žacléř",
+        "popis": "Východní brána Krkonoš. Tak se říká městu Žacléř. Málokdo, ale ví, že zde v letech 1570 až 1992 probíhala hlubinná černouhelná těžba. Na těchto základech se nachází v současné době hornický skanzen.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Žacléř",
+        "kod_obce": "579874",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54201",
+        "www": "http://www.djs-ops.cz",
+        "telefon": "+420724633277",
+        "wkt": "POINT(50.6676 15.9302)",
+        "x": 15.9302,
+        "y": 50.6676,
+        "dp_id": "TECHP39",
+        "ds_id": "100666",
+        "OBJECTID": 39
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7948000000001,
+          50.6661000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Dixova brusírna dřeva, Temný Důl",
+        "popis": "Celý komplex stojí při řece Úpě v severozápadní části Horního Maršova.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Horní Maršov",
+        "kod_obce": "579262",
+        "nazev_ulice": "Temný Důl",
+        "cislo_domovni": "71",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "54226",
+        "www": "http://www.krkonose.eu",
+        "telefon": null,
+        "wkt": "POINT(50.6661 15.7948)",
+        "x": 15.7948,
+        "y": 50.6661,
+        "dp_id": "TECHP40",
+        "ds_id": "101881",
+        "OBJECTID": 40
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1625000000001,
+          50.2948000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Rodinný pivovar Dobruška",
+        "popis": "Areál stávajícího pivovaru vznikl rozsáhlou rekonstrukcí původního pivovaru z roku 1869, který byl po dlouhých letech chátrání v roce 1996 uzavřen. Stávající majitel areál pivovaru odkoupil v červnu 2002 a ve dvou náročných etapách kompletně zrekonstruoval.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Dobruška",
+        "kod_orp": "5202",
+        "nazev_obce": "Dobruška",
+        "kod_obce": "576271",
+        "nazev_ulice": "Křovická ",
+        "cislo_domovni": "267",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "51801",
+        "www": "http://www.pivovar-dobruska.cz",
+        "telefon": "+420603290457",
+        "wkt": "POINT(50.2948 16.1625)",
+        "x": 16.1625,
+        "y": 50.2948,
+        "dp_id": "TECHP41",
+        "ds_id": "102293",
+        "OBJECTID": 41
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4663,
+          50.1602
+        ]
+      },
+      "properties": {
+        "nazev": "Muzeum dráhy Doudleby - Vamberk - Rokytnice",
+        "popis": "Muzeum provozované Občanským sdružením Letohradský železniční klub v Rokytnici v Orlických horách.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Rychnov nad Kněžnou",
+        "kod_orp": "5213",
+        "nazev_obce": "Rokytnice v Orlických horách",
+        "kod_obce": "576701",
+        "nazev_ulice": "Kasárna ",
+        "cislo_domovni": "35",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "51761",
+        "www": "http://https://lzkclub.estranky.cz/clanky/muzeum-rokytnice-info.html",
+        "telefon": "+420604256149",
+        "wkt": "POINT(50.1602 16.4663)",
+        "x": 16.4663,
+        "y": 50.1602,
+        "dp_id": "TECHP42",
+        "ds_id": "102477",
+        "OBJECTID": 42
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3163000000001,
+          50.1251
+        ]
+      },
+      "properties": {
+        "nazev": "Silniční most, Peklo nad Zdobnicí",
+        "popis": "Přes Zdobnici nedaleko silnice z Hradce Králové do Žamberka u osady Peklo se nachází silniční krytý most věšadlové konstrukce s valbovou šindelem krytou střechou.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Rychnov nad Kněžnou",
+        "kod_orp": "5213",
+        "nazev_obce": "Vamberk",
+        "kod_obce": "576883",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "51601",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.1251 16.3163)",
+        "x": 16.3163,
+        "y": 50.1251,
+        "dp_id": "TECHP43",
+        "ds_id": "102685",
+        "OBJECTID": 43
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8455000000001,
+          50.6963000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Muzeum Vápenka",
+        "popis": "Osmiboká šachtová věž na pálení vápna z 19. století je připomínkou těžby a zpracování vápence v tomto regionu. Na vrcholku věže je postavena osmiboká dřevěná stavba muzea, které přibližuje historii zdejší lokality.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Horní Maršov",
+        "kod_obce": "579262",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54226",
+        "www": "http://www.veselyvylet.cz/cz/vv9.html",
+        "telefon": null,
+        "wkt": "POINT(50.6963 15.8455)",
+        "x": 15.8455,
+        "y": 50.6963,
+        "dp_id": "TECHP44",
+        "ds_id": "103405",
+        "OBJECTID": 44
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2787000000001,
+          50.1716000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Městský Podorlický pivovar",
+        "popis": "Historie pivovaru sahá do 16. století, kdy jej založil rod Kolowratů.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Rychnov nad Kněžnou",
+        "kod_orp": "5213",
+        "nazev_obce": "Rychnov nad Kněžnou",
+        "kod_obce": "576069",
+        "nazev_ulice": "Kaštany ",
+        "cislo_domovni": "435",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "51601",
+        "www": "http://www.pivovarrychnov.cz",
+        "telefon": null,
+        "wkt": "POINT(50.1716 16.2787)",
+        "x": 16.2787,
+        "y": 50.1716,
+        "dp_id": "TECHP45",
+        "ds_id": "104759",
+        "OBJECTID": 45
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6383000000001,
+          50.3697000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Pivovar Hořice",
+        "popis": "Soubor průmyslových staveb z pískovce z lomu u sv. Josefa v Hořicích z let 1885 – 1895.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Hořice",
+        "kod_orp": "5204",
+        "nazev_obce": "Hořice",
+        "kod_obce": "572926",
+        "nazev_ulice": "Riegrova ",
+        "cislo_domovni": "619",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50801",
+        "www": "http://www.expivovar.cz",
+        "telefon": null,
+        "wkt": "POINT(50.3697 15.6383)",
+        "x": 15.6383,
+        "y": 50.3697,
+        "dp_id": "TECHP46",
+        "ds_id": "104842",
+        "OBJECTID": 46
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6342000000001,
+          50.4639000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Barokní kovárna Kal",
+        "popis": "Kovárna stojí nad návsí obce Kal u Pecky. Podle tereziánského katastru stála v Kalu již v roce 1756. Kovárna je chráněna zděnou podsíní, v níž se kovali koně i hovězí dobytek a opravovalo se větší zemědělské nářadí a vozy.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Nová Paka",
+        "kod_orp": "5210",
+        "nazev_obce": "Pecka",
+        "kod_obce": "573299",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50782",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.4639 15.6342)",
+        "x": 15.6342,
+        "y": 50.4639,
+        "dp_id": "TECHP47",
+        "ds_id": "104999",
+        "OBJECTID": 47
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9166000000001,
+          50.3378000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Parní staniční vodárna Jaroměř",
+        "popis": "Parní staniční vodárna v Jaroměři sloužila k přečerpávání vody pro parní lokomotivy z řeky Labe do nedaleké železniční stanice Jaroměř. V budově býval parní stroj s čerpadlem.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Jaroměř",
+        "kod_orp": "5206",
+        "nazev_obce": "Jaroměř",
+        "kod_obce": "574121",
+        "nazev_ulice": "Průmyslová ",
+        "cislo_domovni": "250",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "55101",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.3378 15.9166)",
+        "x": 15.9166,
+        "y": 50.3378,
+        "dp_id": "TECHP48",
+        "ds_id": "105012",
+        "OBJECTID": 48
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8584000000001,
+          50.3004000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Nádraží Smiřice",
+        "popis": "Historická nádražní budova ve stylu loveckého zámečku.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Smiřice",
+        "kod_obce": "570877",
+        "nazev_ulice": "Nádražní ",
+        "cislo_domovni": "166",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50303",
+        "www": "http://www.smirice.eu/nadrazi/nadrazi.htm",
+        "telefon": null,
+        "wkt": "POINT(50.3004 15.8584)",
+        "x": 15.8584,
+        "y": 50.3004,
+        "dp_id": "TECHP49",
+        "ds_id": "105057",
+        "OBJECTID": 49
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0927,
+          50.5492
+        ]
+      },
+      "properties": {
+        "nazev": "Měděný důl Bohumír, Jívka",
+        "popis": "V okolí obce Jívka cca 20 km na východ od Trutnova byly v 19. století odkryty černouhelné sloje a žíly s měděným zrudněním chalkozínu, bornitu, malachitu, azuritu, covellinu.  Sloje byly těženy od poloviny 19. století do 60. let 20. století.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Jívka",
+        "kod_obce": "579378",
+        "nazev_ulice": null,
+        "cislo_domovni": "187",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "54213",
+        "www": "http://www.djs-ops.cz/dul-bohumir/",
+        "telefon": "+420724805646",
+        "wkt": "POINT(50.5492 16.0927)",
+        "x": 16.0927,
+        "y": 50.5492,
+        "dp_id": "TECHP50",
+        "ds_id": "105102",
+        "OBJECTID": 50
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0780000000001,
+          50.1510000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Vodárenská věž, Týniště nad Orlicí",
+        "popis": "Věžový železobetonový vodojem o objemu 200 m3, výška vodojemu cca 35m. Vybudován v letech 1925 - 1928. Vodojem sloužil svému účelu do roku 2008.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Rychnov nad Kněžnou",
+        "kod_okresu": "CZ0524",
+        "nazev_orp": "Kostelec nad Orlicí ",
+        "kod_orp": "5208",
+        "nazev_obce": "Týniště nad Orlicí",
+        "kod_obce": "576859",
+        "nazev_ulice": "T. G. Masaryka",
+        "cislo_domovni": "155",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "51721",
+        "www": "http://www.muzeum-tyniste.cz",
+        "telefon": "+420603450213",
+        "wkt": "POINT(50.1510 16.0780)",
+        "x": 16.078,
+        "y": 50.151,
+        "dp_id": "TECHP51",
+        "ds_id": "105105",
+        "OBJECTID": 51
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5610000000001,
+          50.4099000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Kruhová cihelna hraběte Augusta Merveldta",
+        "popis": "Kruhová cihelna s pecí typu Hoffmann, jedna z posledních cihelen s pecí tohoto typu v Královéhradeckém kraji.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Jičín",
+        "kod_orp": "5207",
+        "nazev_obce": "Šárovcova Lhota",
+        "kod_obce": "573256",
+        "nazev_ulice": null,
+        "cislo_domovni": "93",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50759",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.4099 15.5610)",
+        "x": 15.561,
+        "y": 50.4099,
+        "dp_id": "TECHP52",
+        "ds_id": "105108",
+        "OBJECTID": 52
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9065,
+          50.4878
+        ]
+      },
+      "properties": {
+        "nazev": "Roubená kovárna, Hajnice",
+        "popis": "Patrový roubený dům s kovárnou a loubím. Jeden z nejstarších domů v obci je díky péči majitele,  akademického malíře Petra Rýdla, vzácnou ukázkou lidové architektury tohoto typu ve východních Čechách.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Hajnice",
+        "kod_obce": "579211",
+        "nazev_ulice": null,
+        "cislo_domovni": "104",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "54466",
+        "www": "http://www.hajnice.cz/index.php?nid=524",
+        "telefon": null,
+        "wkt": "POINT(50.4878 15.9065)",
+        "x": 15.9065,
+        "y": 50.4878,
+        "dp_id": "TECHP53",
+        "ds_id": "105109",
+        "OBJECTID": 53
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7084,
+          50.6331000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Nákladní lanovka Černý Důl - Kunčice nad Labem",
+        "popis": "Nákladní lanovku vybudovala v letech 1959 - 1963 firma Transporta Chrudim za účelem přepravy vápence z vápencových dolů kolem Černého Dolu k železnici v Kunčicích nad Labem. Jedná se o nejdelší nákladní lanovou dráhu ve Střední Evropě. Lanovka stále slouží svému účelu a to až do vytěžení vápence v Černém Dole firmou Krkonošské vápenky Kunčice s.r.o. Po ukončení těžební činnosti bude lanovka rozebrána.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Vrchlabí",
+        "kod_orp": "5215",
+        "nazev_obce": "Černý Důl",
+        "kod_obce": "579114",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54344",
+        "www": "http://www.kvk.cz/o-firme/lanova-draha/",
+        "telefon": null,
+        "wkt": "POINT(50.6331 15.7084)",
+        "x": 15.7084,
+        "y": 50.6331,
+        "dp_id": "TECHP54",
+        "ds_id": "105117",
+        "OBJECTID": 54
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8262000000001,
+          50.2139000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Novákovy garáže, Hradec Králové",
+        "popis": "Funkcionalistický palác automobilových garáží byl postaven v roce 1932 podle návrhu arch. Josefa Fňouka na objednávku Jaroslava Nováka. Ve své době patřily Novákovy garáže k nejmodernějším stavbám svého druhu v Evropě.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": "Náměstí 5. května",
+        "cislo_domovni": "835",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": "10",
+        "psc": "50002",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.2139 15.8262)",
+        "x": 15.8262,
+        "y": 50.2139,
+        "dp_id": "TECHP55",
+        "ds_id": "105123",
+        "OBJECTID": 55
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8400000000001,
+          50.1787
+        ]
+      },
+      "properties": {
+        "nazev": "Věžový vodojem, Hradec Králové",
+        "popis": "Věžový vodojem se nachází na kopci sv. Jana v městské části Nový Hradec Králové. Byl vybudován v letech 1936-37.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": "Husova",
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50008",
+        "www": "http://www.khp.cz",
+        "telefon": "+420601273273",
+        "wkt": "POINT(50.1787 15.8400)",
+        "x": 15.84,
+        "y": 50.1787,
+        "dp_id": "TECHP56",
+        "ds_id": "105152",
+        "OBJECTID": 56
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.051,
+          50.5364000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Naučná stezka Po stopách hornictví, Malé Svatoňovice",
+        "popis": "Hornická naučná stezka začíná na náměstí v Malých Svatoňovicích.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Malé Svatoňovice",
+        "kod_obce": "579513",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54234",
+        "www": "http://www.malesvatonovice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.5364 16.0510)",
+        "x": 16.051,
+        "y": 50.5364,
+        "dp_id": "TECHP57",
+        "ds_id": "105185",
+        "OBJECTID": 57
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8708000000001,
+          50.4013
+        ]
+      },
+      "properties": {
+        "nazev": "Šporkův mlýn, Stanovice",
+        "popis": "Mlýn stojící na břehu Labe nedaleko hospitalu Kuks byl postaven na přelomu 16. - 17. století. Strojní vybavení mlýna se nedochovalo, zásadní přestavba objektu na válcový mlýn proběhla v letech 1936–38. V současné době slouží jako restaurace a penzion. V objektu je rovněž malá vodní elektrárna.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Dvůr Králové nad Labem",
+        "kod_orp": "5203",
+        "nazev_obce": "Stanovice",
+        "kod_obce": "548812",
+        "nazev_ulice": null,
+        "cislo_domovni": "14",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "54401",
+        "www": "http://www.sporkuvmlyn.cz",
+        "telefon": "+420777876095",
+        "wkt": "POINT(50.4013 15.8708)",
+        "x": 15.8708,
+        "y": 50.4013,
+        "dp_id": "TECHP58",
+        "ds_id": "105272",
+        "OBJECTID": 58
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2425000000001,
+          50.6264
+        ]
+      },
+      "properties": {
+        "nazev": "Nádražní budova, Meziměstí",
+        "popis": "Železniční stanice Meziměstí se nachází na železniční trati č. 026 spojující Týniště nad Orlicí s Otovicemi a státními hranicemi s Polskem.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Broumov",
+        "kod_orp": "5201",
+        "nazev_obce": "Meziměstí",
+        "kod_obce": "574252",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54981",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.6264 16.2425)",
+        "x": 16.2425,
+        "y": 50.6264,
+        "dp_id": "TECHP59",
+        "ds_id": "105502",
+        "OBJECTID": 59
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9089000000001,
+          50.3579000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Věžový vodojem, Jaroměř",
+        "popis": "Železobetonový vodojem stojící na návrší poblíž jaroměřské nemocnice je zdaleka viditelným orientačním bodem. Vodojem byl vybudován v letech 1927-28. Objem  rezervoáru činí 400 m3, jeho dno se náchází ve výšce 20 m nad terénem. Vodojem sloužil svému účelu do roku 1985.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Jaroměř",
+        "kod_orp": "5206",
+        "nazev_obce": "Jaroměř",
+        "kod_obce": "574121",
+        "nazev_ulice": "U Nemocnice",
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "55101",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.3579 15.9089)",
+        "x": 15.9089,
+        "y": 50.3579,
+        "dp_id": "TECHP60",
+        "ds_id": "105634",
+        "OBJECTID": 60
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5414000000001,
+          50.3728
+        ]
+      },
+      "properties": {
+        "nazev": "Parní staniční vodárna Ostroměř",
+        "popis": "Domek z pískovcových kvádrů sloužil jako parní přečerpávací vodárna pro lokomotivy na ostroměřském nádraží. Do dnešních dnů se zařízení strojovny bohužel nedochovalo.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Jičín",
+        "kod_okresu": "CZ0522",
+        "nazev_orp": "Hořice",
+        "kod_orp": "5204",
+        "nazev_obce": "Ostroměř",
+        "kod_obce": "573272",
+        "nazev_ulice": "Štorchova ",
+        "cislo_domovni": "98",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50752",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.3728 15.5414)",
+        "x": 15.5414,
+        "y": 50.3728,
+        "dp_id": "TECHP61",
+        "ds_id": "106228",
+        "OBJECTID": 61
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0619,
+          50.3620000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Vodní nádrž Rozkoš",
+        "popis": "Vodní dílo na potoku Rozkoši v Úpsko-metujské tabuli. Rozkoš s rozlohou 1001,3 hektarů je osmou největší přehradou v České republice.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Náchod",
+        "kod_orp": "5209",
+        "nazev_obce": "Česká Skalice",
+        "kod_obce": "573990",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "55203",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.3620 16.0619)",
+        "x": 16.0619,
+        "y": 50.362,
+        "dp_id": "TECHP62",
+        "ds_id": "106229",
+        "OBJECTID": 62
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7334000000001,
+          50.7327000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Vodárna pro boudu na Sněžce",
+        "popis": "Vodárna z roku 1912 se nachází v Obřím Dole v nadmořské výšce 1210 m. Stavba zapuštěná do svahu Sněžky byla napojena na tři další objekty pro jímání vody.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Trutnov",
+        "kod_orp": "5214",
+        "nazev_obce": "Pec pod Sněžkou",
+        "kod_obce": "579581",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54221",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.7327 15.7334)",
+        "x": 15.7334,
+        "y": 50.7327,
+        "dp_id": "TECHP63",
+        "ds_id": "106290",
+        "OBJECTID": 63
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7854,
+          50.2247
+        ]
+      },
+      "properties": {
+        "nazev": "Centrum andragogiky Hradec Králové",
+        "popis": "Multifunkční objekt vznikl v roce 2014 rekonstrukcí a dostavbou bývalé cihelny v obci Svobodné Dvory u Hradce Králové.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Hradec Králové",
+        "kod_obce": "569810",
+        "nazev_ulice": null,
+        "cislo_domovni": "809",
+        "typ_cisla_domovniho": "č.p.",
+        "cislo_orientacni": null,
+        "psc": "50311",
+        "www": "http://www.centrumandragogiky.cz",
+        "telefon": "+420774695281",
+        "wkt": "POINT(50.2247 15.7854)",
+        "x": 15.7854,
+        "y": 50.2247,
+        "dp_id": "TECHP64",
+        "ds_id": "106319",
+        "OBJECTID": 64
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8252000000001,
+          50.2569000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Jez a vodní elektrárna, Předměřice nad Labem",
+        "popis": "Jez s vodní elektrárnou na řece Labi byl dokončen roku 1952. Součástí jezu je také most, po kterém vede silnice z Hradce Králové do Předměřic nad Labem. Po mostě také prochází trasa Labské cyklostezky č. 2.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Hradec Králové",
+        "kod_okresu": "CZ0521",
+        "nazev_orp": "Hradec Králové",
+        "kod_orp": "5205",
+        "nazev_obce": "Předměřice nad Labem",
+        "kod_obce": "570672",
+        "nazev_ulice": "Průmyslová",
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "50302",
+        "www": null,
+        "telefon": null,
+        "wkt": "POINT(50.2569 15.8252)",
+        "x": 15.8252,
+        "y": 50.2569,
+        "dp_id": "TECHP65",
+        "ds_id": "106344",
+        "OBJECTID": 65
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1644000000001,
+          50.4179000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Zvonkohra v Náchodě",
+        "popis": "Zvonkohra, která stojí na Karlově náměstí hraje lidové, umělé písně i koledy. Zvonkohru tvoří přes čtyři metry vysoký oblouk z nerezové oceli, tvarem připomínající bránu. Na vrcholu oblouku je miniatura náchodského zámku, pod níž je zavěšeno 11 zvonků.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Náchod",
+        "kod_okresu": "CZ0523",
+        "nazev_orp": "Náchod",
+        "kod_orp": "5209",
+        "nazev_obce": "Náchod",
+        "kod_obce": "573868",
+        "nazev_ulice": "Karlovo náměstí",
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54701",
+        "www": "http://www.mestonachod.cz",
+        "telefon": null,
+        "wkt": "POINT(50.4179 16.1644)",
+        "x": 16.1644,
+        "y": 50.4179,
+        "dp_id": "TECHP66",
+        "ds_id": "106405",
+        "OBJECTID": 66
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6027000000001,
+          50.5077000000001
+        ]
+      },
+      "properties": {
+        "nazev": "Větrný mlýn v Borovnici",
+        "popis": "Jedná se o plně funkční repliku původního Hackelova mlýna ze 40. let 19. století, který stál v Borovnici až do roku 1968. Tento dřevěný větrný mlýn byl postaven v letech 2019/2020 na hřebeni nad obcí Borovnice.",
+        "nazev_vusc": "Královehradecký",
+        "kod_vusc": "CZ052",
+        "nazev_okresu": "Trutnov",
+        "kod_okresu": "CZ0525",
+        "nazev_orp": "Dvůr Králové nad Labem",
+        "kod_orp": "5203",
+        "nazev_obce": "Borovnice",
+        "kod_obce": "579092",
+        "nazev_ulice": null,
+        "cislo_domovni": null,
+        "typ_cisla_domovniho": null,
+        "cislo_orientacni": null,
+        "psc": "54477",
+        "www": "http://www.vetrny-mlyn-borovnice.cz",
+        "telefon": null,
+        "wkt": "POINT(50.5077 15.6027)",
+        "x": 15.6027,
+        "y": 50.5077,
+        "dp_id": "TECHP67",
+        "ds_id": "107851",
+        "OBJECTID": 67
+      }
+    }
+  ]
+}
