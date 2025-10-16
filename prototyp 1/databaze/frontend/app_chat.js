@@ -283,10 +283,7 @@ async function loadAndShowPlaceDetails(dpId) {
 function showPlaceDetails(place) {
     const placeInfo = document.getElementById('place-info');
     
-    const name = place.nazev || place.dp_id || 'Bez názvu';
-    const description = place.popis || place.zamereni_muzea || 'Žádný popis není k dispozici.';
-    const website = place.www || null;
-    const openingHours = place.oteviraci_doba || place.pozn_oteviraci_doba || 'Informace nejsou k dispozici';
+    const category = place.typ_muzea || place.typ || getPlaceType(place.source_file);
     
     const coords = place.geometry?.coordinates || [0, 0];
     const lat = coords[1];
