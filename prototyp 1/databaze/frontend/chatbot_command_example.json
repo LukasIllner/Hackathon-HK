@@ -1,5 +1,0 @@
-{
-  "action": "show",
-  "dp_id": "MG1",
-  "comment": "Chatbot pošle jen dp_id, frontend zavolá API pro detaily"
-}
