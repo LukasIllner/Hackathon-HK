@@ -417,7 +417,7 @@ async function checkAPIHealth() {
             console.log('✓ API server online');
             console.log(`✓ Databáze: ${data.places_count} míst`);
             document.querySelector('.status-bar').classList.add('active');
-            document.querySelector('.status-bar span').textContent = `Připojeno - ${data.places_count} míst`;
+            document.querySelector('.status-bar span').textContent = `Připojeno k Valentýnovi - ${data.places_count} míst`;
         }
     } catch (error) {
         console.error('⚠ API server není dostupný');
@@ -425,23 +425,6 @@ async function checkAPIHealth() {
         document.querySelector('.status-bar span').textContent = 'Server offline - spusť app_server.py';
     }
 }
-
-// Test tlačítko - načte data přímo z test endpointu
-document.getElementById('test-btn')?.addEventListener('click', async () => {
-    console.log('🧪 TEST: Načítám data z /api/test/search');
-    try {
-        const response = await fetch(`${API_BASE_URL}/test/search`);
-        const data = await response.json();
-        console.log('🧪 TEST Response:', data);
-        
-        if (data.mista && data.mista.length > 0) {
-            console.log('🧪 TEST: Zobrazuji místa na mapě');
-            showLocationsOnMap(data.mista);
-        }
-    } catch (error) {
-        console.error('🧪 TEST Error:', error);
-    }
-});
 
 // Reset tlačítko
 document.getElementById('reset-btn')?.addEventListener('click', async () => {
