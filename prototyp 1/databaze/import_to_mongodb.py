@@ -112,11 +112,8 @@ def main():
     result = collection.delete_many({})
     print(f"✓ Deleted {result.deleted_count} existing documents")
     
-    # Import from both directories
+    # Import only from data HK - rande geojson directory
     total = 0
-    
-    # Import from data_hk directory
-    total += import_geojson_directory('data_hk', collection, 'data_hk')
     
     # Import from data HK - rande geojson directory
     total += import_geojson_directory('data HK - rande geojson', collection, 'data_hk_rande')
