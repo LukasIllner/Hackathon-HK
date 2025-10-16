@@ -295,44 +295,45 @@ Máš přístup k databázi více než 1000 míst v kraji, včetně:
 - 💆 Lázně - relaxace pro dva
 - 🎡 Zábavní centra - aktivní zábava
 
-Když ti někdo řekne, co hledá, OKAMŽITĚ použij funkci hledej_mista_na_rande a najdi konkrétní místa.
-NEpytej se na upřesnění jako první - ROVNOU VYHLEDEJ a pak případně nabídni další možnosti.
+PRAVIDLA PRO VOLÁNÍ FUNKCE:
+🚫 NEvolej funkci hledej_mista_na_rande pokud:
+   - Uživatel jen pozdraví nebo zahajuje konverzaci
+   - Ptá se obecně bez konkrétní žádosti o místa
+   - Ještě si není jistý co chce
+   - Odpovídá na tvé upřesňující otázky
+
+✅ Volej funkci hledej_mista_na_rande POUZE pokud:
+   - Uživatel EXPLICITNĚ žádá konkrétní místa ("ukaž mi", "najdi", "kde jsou", "chci vidět")
+   - Rozhodl se a chce konkrétní doporučení
+   - Má jasnou představu (hrady, pivovary, muzea, atd.)
+
+POSTUP KONVERZACE:
+1. První kontakt: Buď přátelský, ptej se na preference
+2. Zjisti co hledá: Romantické? Kulturní? Aktivní? Venkovní?
+3. Upřesni požadavky: Kde? Vzdálenost? Specifické přání?
+4. AŽ PAK: Zavolej funkci a najdi konkrétní místa
 
 Tvoje odpovědi by měly být:
 ✅ V češtině
-✅ Přátelské a osobní
+✅ Přátelské a konverzační
+✅ Nejdřív se ptej, pak hledej
 ✅ Zaměřené na zážitek pro dvojice
-✅ S konkrétními doporučeními
-✅ S informacemi o přístupnosti, pokud jsou k dispozici
-✅ S návrhy na různé typy randí (romantické, aktivní, kulturní, relaxační)
+✅ S informacemi o přístupnosti když zobrazuješ místa
 
-Když uživatel ptá na rande, mysli na:
-- Romantické prostředí (hrady, zámky, rozhledny, příroda)
-- Společné zážitky (muzea, pivovary, zoo)
-- Různé ročníčasové možnosti
-- Dostupnost a polohu
+Typy randí k doporučení:
+- 🏰 Romantické (hrady, zámky, rozhledny, příroda)
+- 🎨 Kulturní (muzea, divadla, galerie)
+- 🍺 Relaxační (pivovary, lázně, kavárny)
+- 🏃 Aktivní (sporty, zoo, příroda)
 
-Buď konverzační, pamatuj si kontext předchozích dotazů a ptej se na upřesnění, pokud potřebuješ.
-
-Pokud někdo hledá "rande", "romantické místo", "výlet pro dva" nebo podobné, použij parametr romanticky=True."""
+Pamatuj si kontext předchozích dotazů v konverzaci."""
 
 
-def chat_s_databazi(zprava_uzivatele: str, chat_session=None):
+def chat_s_databazi(zprava_uzivatele: str, chat_session):
     """Odeslání zprávy a zpracování dotazů do databáze"""
     
-    print(f"\n{'='*60}")
-    print(f"VY: {zprava_uzivatele}")
-    print(f"{'='*60}\n")
-    
-    # Inicializace modelu se systémovou instrukcí
-    model = genai.GenerativeModel(
-        model_name='gemini-2.0-flash-exp',
-        tools=[nastroj],
-        system_instruction=SYSTEMOVA_INSTRUKCE
-    )
-    
-    # Použití existující konverzace nebo vytvoření nové
-    chat = chat_session if chat_session else model.start_chat()
+    # Použití existující konverzace
+    chat = chat_session
     
     # Odeslání zprávy
     response = chat.send_message(zprava_uzivatele)
@@ -371,12 +372,11 @@ def chat_s_databazi(zprava_uzivatele: str, chat_session=None):
             else:
                 for part in response.candidates[0].content.parts:
                     if hasattr(part, 'text'):
-                        print(f"💬 ASISTENT: {part.text}")
+                        print(f"\n💬 ASISTENT: {part.text}\n")
                 break
         else:
             break
     
-    print(f"\n{'='*60}\n")
     return chat
 
 
@@ -401,12 +401,12 @@ def main():
     chat = model.start_chat()
     
     # Příklady dotazů
-    print("\n💡 Příklady dotazů:")
-    print("  - Kam na romantické rande v Hradci Králové?")
-    print("  - Hledám zajímavé místo na výlet pro dva")
-    print("  - Jaké hrady jsou v kraji?")
-    print("  - Máte tip na kulturní večer?")
-    print("  - Kde najdu pěknou rozhlednu s výhledem?")
+    print("\n💡 Příklady konverzace:")
+    print("  - Ahoj, chci naplánovat rande")
+    print("  - Hledám místo na výlet pro dva")
+    print("  - Ukaž mi hrady v kraji")
+    print("  - Najdi pivovary které můžeme navštívit")
+    print("  - Kam na romantický večer?")
     print("")
     
     while True:
