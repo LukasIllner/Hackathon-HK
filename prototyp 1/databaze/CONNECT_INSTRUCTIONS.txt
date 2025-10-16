@@ -1,0 +1,99 @@
+================================================================================
+  MONGODB ATLAS - CONNECTION INSTRUCTIONS
+================================================================================
+
+All database files are organized in this "databaze" directory.
+
+================================================================================
+  STEP 1: CREATE MONGODB ATLAS ACCOUNT (2 minutes)
+================================================================================
+
+1. Go to: https://www.mongodb.com/cloud/atlas/register
+
+2. Sign up (FREE - no credit card needed)
+
+3. Create a new cluster:
+   - Click "Build a Database"
+   - Choose "M0 FREE" tier
+   - Click "Create"
+
+================================================================================
+  STEP 2: SET UP DATABASE ACCESS (2 minutes)
+================================================================================
+
+A. Create Database User:
+   - Go to "Database Access" (left menu, under Security)
+   - Click "Add New Database User"
+   - Username: hackathon_user (or any name)
+   - Password: Create a strong password (SAVE THIS!)
+   - Privileges: "Read and write to any database"
+   - Click "Add User"
+
+B. Allow Network Access:
+   - Go to "Network Access" (left menu, under Security)
+   - Click "Add IP Address"
+   - Click "Allow Access from Anywhere"
+   - Click "Confirm"
+
+================================================================================
+  STEP 3: GET CONNECTION STRING (1 minute)
+================================================================================
+
+1. Go to "Database" (left menu)
+2. Click "Connect" button
+3. Choose "Drivers"
+4. Select "Python" version "3.12 or later"
+5. Copy the connection string - it looks like:
+
+   mongodb+srv://hackathon_user:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
+
+6. IMPORTANT: Replace <password> with your actual password!
+
+================================================================================
+  STEP 4: CREATE .env FILE (1 minute)
+================================================================================
+
+In this databaze directory, create a file named ".env":
+
+cd databaze
+cp .env.example .env
+nano .env
+
+Add this content (with YOUR connection string):
+
+MONGODB_URI=mongodb+srv://hackathon_user:YOUR_PASSWORD@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
+DATABASE_NAME=hackathon_hk
+COLLECTION_NAME=places
+
+SAVE THE FILE!
+
+================================================================================
+  STEP 5: RUN IMPORT (2 minutes)
+================================================================================
+
+cd databaze
+./setup.sh
+
+Wait for setup to complete, then:
+
+source venv/bin/activate
+python import_to_mongodb.py
+
+This will import ALL GeoJSON files into MongoDB Atlas!
+
+================================================================================
+  DONE! 
+================================================================================
+
+Your database is now:
+✓ Online in MongoDB Atlas cloud
+✓ Accessible from anywhere
+✓ Queryable by dp_id
+✓ Ready to use!
+
+To query the database:
+  python query_mongodb.py
+
+For more details, see README.md in this directory.
+
+================================================================================
