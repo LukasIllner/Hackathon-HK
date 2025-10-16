@@ -204,6 +204,32 @@ def hledej_mista_na_rande(
         # Provedení dotazu
         vysledky = list(places_collection.find(query).limit(pocet_vysledku))
         
+        # FALLBACK: Pokud najdeme málo výsledků (< 3) a byl to category search,
+        # zkus regex search v source_file jako backup
+        if len(vysledky) < 3 and typ_dotazu == "category" and kategorie:
+            fallback_query = {"source_file": {"$regex": kategorie, "$options": "i"}}
+            
+            # Přidej region filtr pokud existuje
+            if region:
+                fallback_query = {
+                    "$and": [
+                        fallback_query,
+                        {
+                            "$or": [
+                                {"nazev_okresu": {"$regex": region, "$options": "i"}},
+                                {"nazev_obce": {"$regex": region, "$options": "i"}},
+                                {"nazev_orp": {"$regex": region, "$options": "i"}}
+                            ]
+                        }
+                    ]
+                }
+            
+            fallback_vysledky = list(places_collection.find(fallback_query).limit(pocet_vysledku))
+            
+            # Pokud fallback našel více, použij ty výsledky
+            if len(fallback_vysledky) > len(vysledky):
+                vysledky = fallback_vysledky
+        
         # Formátování výsledků
         formatovana_mista = []
         for doc in vysledky:
