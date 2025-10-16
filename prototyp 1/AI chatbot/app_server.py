@@ -154,16 +154,10 @@ class ChatSession:
                                     'Už se těším, co objevím'
                                 ]
                                 
-                                # Pokud AI odpověděla BEZ volání funkce když měla
+                                # FALLBACK: Detekuj jestli AI omylem poslala kód nebo meta-komentář
                                 if any(phrase in response_text for phrase in forbidden_phrases):
                                     print(f"⚠️ AI poslala meta-komentář nebo kód! Text: {response_text[:100]}")
                                     response_text = "Omlouvám se, zkus to prosím znovu - napiš mi konkrétně co hledáš, třeba 'hrady' nebo 'pivovary'."
-                                
-                                # KRITICKÉ: Pokud AI odpověděla, ale nezavolala funkci a nejsou žádná místa
-                                elif len(locations) == 0 and len(response_text) > 100:
-                                    # AI pravděpodobně vymýšlí ze své paměti
-                                    print(f"⚠️ AI odpověděla bez volání funkce! Locations: {len(locations)}, Text length: {len(response_text)}")
-                                    response_text = "Hmm, bohužel tohle v kraji nemám. 🤔 Můžu ti ale najít: hrady, zámky, pivovary, lázně, muzea, rozhledny, zoo, koupaliště nebo restaurace. Co tě láká?"
                         break
                 else:
                     break
