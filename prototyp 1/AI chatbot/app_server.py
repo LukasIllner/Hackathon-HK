@@ -33,11 +33,13 @@ class ChatSession:
     
     def __init__(self, session_id):
         self.session_id = session_id
+        
         self.model = genai.GenerativeModel(
             model_name=GEMINI_MODEL,
             tools=[get_tool()],
             system_instruction=SYSTEMOVA_INSTRUKCE
         )
+        
         self.chat = self.model.start_chat()
         self.history = []
         self.last_locations = []
@@ -66,7 +68,9 @@ class ChatSession:
             })
             
             # Odeslání zprávy do Gemini
+            print(f"💬 Odesílám do AI: {user_message}")
             response = self.chat.send_message(user_message)
+            print(f"🤖 AI odpověděla, zpracovávám...")
             
             # Zpracování volání funkcí
             while True:
@@ -74,7 +78,14 @@ class ChatSession:
                     function_responses = []
                     has_function_calls = False
                     
+                    print(f"🔍 Počet parts v odpovědi: {len(response.candidates[0].content.parts)}")
+                    
                     for part in response.candidates[0].content.parts:
+                        print(f"  📦 Part type: {type(part)}")
+                        print(f"  📦 Has function_call: {hasattr(part, 'function_call')}")
+                        print(f"  📦 Has text: {hasattr(part, 'text')}")
+                        if hasattr(part, 'text'):
+                            print(f"  📝 Text preview: {part.text[:100]}...")
                         if hasattr(part, 'function_call') and part.function_call:
                             has_function_calls = True
                             function_call = part.function_call
@@ -125,6 +136,11 @@ class ChatSession:
                         for part in response.candidates[0].content.parts:
                             if hasattr(part, 'text'):
                                 response_text = part.text
+                                
+                                # FALLBACK: Detekuj jestli AI omylem poslala kód
+                                if 'print(' in response_text or 'hledej_mista_na_rande(' in response_text or 'default_api' in response_text:
+                                    print("⚠️ AI poslala kód místo volání funkce! Opravuji...")
+                                    response_text = "Omlouvám se, momentálně nemůžu vyhledat. Můžeš zkusit zadat konkrétnější dotaz, například: 'najdi hrady' nebo 'ukaž pivovary'."
                         break
                 else:
                     break
@@ -142,11 +158,20 @@ class ChatSession:
             if locations:
                 self.last_locations = locations
             
-            return {
+            result = {
                 'response': response_text,
                 'locations': locations,
                 'tool_calls': tool_calls_info
             }
+            
+            # Debug log
+            print(f"📤 Odpověď pro frontend:")
+            print(f"   - Response: {response_text[:100]}...")
+            print(f"   - Locations count: {len(locations)}")
+            if locations:
+                print(f"   - First location: {locations[0].get('nazev')} (ID: {locations[0].get('dp_id')})")
+            
+            return result
             
         except Exception as e:
             print(f"❌ Chyba v chat session: {e}")
@@ -310,6 +335,23 @@ def get_place(dp_id):
         return jsonify({
             'error': 'Database error',
             'message': str(e)
+        }), 500
+
+
+@app.route('/api/test/search')
+def test_search():
+    """Test endpoint - vyhledá hrady pro testování"""
+    try:
+        result = hledej_mista_na_rande(
+            places_collection,
+            typ_dotazu="category",
+            kategorie="Hrady",
+            pocet_vysledku=3
+        )
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({
+            'error': str(e)
         }), 500
 
 

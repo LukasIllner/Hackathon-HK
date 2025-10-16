@@ -119,15 +119,21 @@ function showLocationsOnMap(locations) {
     const bounds = [];
     
     locations.forEach((location, index) => {
-        // Získání souřadnic
-        const coords = location.souradnice || [];
-        if (coords.length < 2) {
-            console.warn('Místo bez souřadnic:', location.nazev);
+        // Získání souřadnic - zkus různé formáty
+        let lat, lon;
+        
+        if (location.lat && location.lon) {
+            lat = location.lat;
+            lon = location.lon;
+        } else if (location.souradnice && location.souradnice.length >= 2) {
+            lon = location.souradnice[0];
+            lat = location.souradnice[1];
+        } else {
+            console.warn('⚠️ Místo bez souřadnic:', location);
             return;
         }
         
-        const lat = coords[1];
-        const lon = coords[0];
+        console.log(`📍 Přidávám marker: ${location.nazev} [${lat}, ${lon}]`);
         const latLng = [lat, lon];
         bounds.push(latLng);
         
@@ -315,6 +321,10 @@ async function sendMessage(message) {
         
         const data = await response.json();
         
+        // Debug log
+        console.log('📥 Data z backendu:', data);
+        console.log('📍 Locations:', data.locations);
+        
         // Odstranit loading
         removeLoadingMessage();
         
@@ -325,13 +335,16 @@ async function sendMessage(message) {
         
         // Zobrazit místa na mapě pokud existují
         if (data.locations && data.locations.length > 0) {
-            console.log('AI našla místa:', data.locations);
+            console.log(`✅ AI našla ${data.locations.length} míst`);
+            console.log('🗺️ První místo:', data.locations[0]);
             showLocationsOnMap(data.locations);
+        } else {
+            console.log('⚠️ Žádná místa k zobrazení');
         }
         
         // Log tool calls
         if (data.tool_calls && data.tool_calls.length > 0) {
-            console.log('Tool calls:', data.tool_calls);
+            console.log('🔧 Tool calls:', data.tool_calls);
         }
         
     } catch (error) {
@@ -380,6 +393,55 @@ async function checkAPIHealth() {
         document.querySelector('.status-bar span').textContent = 'Server offline - spusť app_server.py';
     }
 }
+
+// Test tlačítko - načte data přímo z test endpointu
+document.getElementById('test-btn')?.addEventListener('click', async () => {
+    console.log('🧪 TEST: Načítám data z /api/test/search');
+    try {
+        const response = await fetch(`${API_BASE_URL}/test/search`);
+        const data = await response.json();
+        console.log('🧪 TEST Response:', data);
+        
+        if (data.mista && data.mista.length > 0) {
+            console.log('🧪 TEST: Zobrazuji místa na mapě');
+            showLocationsOnMap(data.mista);
+        }
+    } catch (error) {
+        console.error('🧪 TEST Error:', error);
+    }
+});
+
+// Reset tlačítko
+document.getElementById('reset-btn')?.addEventListener('click', async () => {
+    console.log('🔄 Reset chat session');
+    try {
+        const response = await fetch(`${API_BASE_URL}/chat/reset`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                session_id: SESSION_ID
+            })
+        });
+        
+        if (response.ok) {
+            // Vyčistit chat
+            chatMessages.innerHTML = '';
+            chatPlaceholder.style.display = 'block';
+            
+            // Vyčistit mapu
+            allMarkers.forEach(marker => map.removeLayer(marker));
+            allMarkers = [];
+            map.setView([50.2099, 15.8325], 11);
+            
+            console.log('✅ Chat resetován');
+            alert('Chat byl resetován. Můžeš začít novou konverzaci.');
+        }
+    } catch (error) {
+        console.error('❌ Reset error:', error);
+    }
+});
 
 // Inicializace
 console.log('🚀 Aplikace spuštěna!');

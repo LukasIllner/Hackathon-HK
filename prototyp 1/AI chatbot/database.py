@@ -233,14 +233,20 @@ def hledej_mista_na_rande(
         # Formátování výsledků
         formatovana_mista = []
         for doc in vysledky:
+            # Získání souřadnic
+            coords = doc.get("geometry", {}).get("coordinates", [])
+            
             misto = {
                 "nazev": doc.get("nazev", "Neznámé"),
                 "id": doc.get("dp_id", "N/A"),
+                "dp_id": doc.get("dp_id", "N/A"),  # Duplicitní pro kompatibilitu
                 "kategorie": doc.get("source_file", "N/A").split("/")[-1].replace(".geojson", ""),
                 "okres": doc.get("nazev_okresu", "N/A"),
                 "obec": doc.get("nazev_obce", "N/A"),
                 "adresa": f"{doc.get('nazev_ulice', '')}, {doc.get('nazev_obce', '')}".strip(", "),
-                "souradnice": doc.get("geometry", {}).get("coordinates", []),
+                "souradnice": coords,
+                "lat": coords[1] if len(coords) >= 2 else 0,
+                "lon": coords[0] if len(coords) >= 2 else 0,
                 "web": doc.get("www", "Není k dispozici"),
                 "pristupnost": doc.get("bezbarierovost", "Neuvedeno"),
             }
